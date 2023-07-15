@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(122, 177, 177);
+    
+
+}
+
+
+.header{
+    top: 0;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    padding: 30px;
+    color: azure;
+    text-align: center;
+    font-weight: 600;
+    position: fixed;
+}
+
+.grid-container{
+    max-width: 1400px;
+    min-width: 400px;
+    min-height: 600px;
+    max-height: 1700px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 50px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    }
+
+.console{
+    padding-bottom: 10px;
+    font-weight: 800;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.text{
+    padding-top: 25px;
+    background-color: lightslategray;
+    box-shadow: 2px 2px 3px black;
+    padding: 20px;
+    font-weight: 600;   
+    text-align: center;
+    
+}
+
+.more-containers{
+    box-shadow: 1px 1px 4px 4px rgb(255, 255, 255);
+    padding: 5px;
+}
+.shadow{
+    box-shadow: 2px 2px 5px 5px rgb(0, 0, 0);
+    padding: 5px;
+}
+    
+.img{
+    width: 140px;
+    height: 140px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 4px white;
+    
+}
+.img:hover{
+    opacity: 0.3;
+    box-shadow: 1px 1px 4px 4px rgb(0, 0, 0);
+}
+
+.item1{
+    grid-row: 3;
+    grid-column: 1/  2;
+    
+}
+
+.item2{
+    grid-row: 3;
+    grid-column: 2/ 3;
+    
+}
+
+.item3{
+    grid-row: 3;
+    grid-column: 3 / 4;
+    
+}
+
+.item4{
+    grid-row: 4/ span 6;
+    grid-column: 1 / 2;
+    
+}
+
+.item5{
+    grid-row: 4/ span 6;
+    grid-column: 2 / 3;
+    
+}
+
+.item6{
+    grid-row: 4/ span 6;
+    grid-column: 3 / 4;
+    
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #464646;
+    border-top: 10px;
+    padding: 7px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+    @media (max-width: 575.98px) {}
+    @media (min-width: 576px) and (max-width: 767.98px) {}   
+    @media (min-width: 770px) and (max-width: 1200px) {}
